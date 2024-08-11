@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shameena's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="hero parallax">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">Welcome to Shameena's Creative Portfolio</h1>
+                <p class="animate-slide-up">Turning Ideas into Reality with Code.</p>
+                <a href="#about" class="btn animate-bounce">Learn More</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <picture>
+                    <source srcset="about-large.jpeg" media="(min-width: 768px)">
+                    <source srcset="about-small.jpg" media="(max-width: 767px)">
+                    <img src="aboutme.jpeg" alt="About Me">
+                </picture>
+                <div class="about-text">
+                    <p>I'm a Computer Science student with a passion for web development and programming. I've built a solid foundation in languages like Python, JavaScript, and C++ and have worked on several personal projects.
+
+                        As a fresher, I'm eager to start my career in a dynamic environment where I can continue to learn and contribute to meaningful projects. My goal is to work with cutting-edge technologies and grow as a developer.
+                        
+                        When I'm not coding, I enjoy exploring new tech trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="content">
+            <h2>My Resume</h2>
+            <p>You can download my resume by clicking the button below:</p>
+            <a href="resume-shaikshameena.pdf" download class="btn animate-shake">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="parallax">
+        <div class="content">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card animate-fade-up">
+                    <picture>
+                        <source srcset="images/project1-large.jpg" media="(min-width: 768px)">
+                        <source srcset="images/project1-small.jpg" media="(max-width: 767px)">
+                        <img src="pose-estimation.png" alt="Project 1">
+                    </picture>
+                    <h3>Pose Detection</h3>
+                    <p>Uses openCv and Mediapipe for Detecting various poses</p>
+                    <a href="https://github.com/Shaikshameena123/ai-ml-projects/tree/main/mediapipe_pose_project" class="btn animate-pulse">View Project</a>
+                </div>
+
+                <div class="project-card animate-fade-up">
+                    <picture>
+                        <source srcset="images/project2-large.jpg" media="(min-width: 768px)">
+                        <source srcset="images/project2-small.jpg" media="(max-width: 767px)">
+                        <img src="hand-gesture.jpeg" alt="Project 2">
+                    </picture>
+                    <h3>Hand Gesture Recognition</h3>
+                    <p>An Efficient Hand Gesture Recognition that uses OpenCv.</p>
+                    <a href="https://github.com/Shaikshameena123/ai-ml-projects/tree/main/hand_gesture_project" class="btn animate-pulse">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>You can reach me by filling out the form below or directly via email.</p>
+
+            <div class="contact-options">
+                <form id="contact-form" action="https://formspree.io/f/xkgwbqqj" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required><br>
+                    <input type="email" name="_replyto" placeholder="Your Email" required><br>
+                    <textarea name="message" placeholder="Your Message" required></textarea><br>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <div class="or-section">
+                    <p>— or —</p>
+                    <p>Contact me directly at:</p>
+                    <a href="mailto:shameena7893@gmail.com" class="email-link">shameena7893@gmail.com</a>
+                </div>
+            </div>
+
+            <p id="success-message" style="display:none; color:green;">Thank you for your message! I'll get back to you soon.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Shaik Shameena. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shameena-shaik-65542b2b7"><img src="linked.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Shaikshameena123"><img src="github.jpeg" alt="GitHub"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
